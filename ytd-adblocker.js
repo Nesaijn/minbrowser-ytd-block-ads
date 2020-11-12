@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        YouTube Adblocker
 // @description Block Ads in YouTube
-// @match       *youtube.com*
+// @match       *.youtube.com*
 // @run-at      document-start
 // ==/UserScript==
 
@@ -12,8 +12,8 @@
 
 var generalSettings = {
   "hideMerch"    : false,
-
   "hideHomeBanner" : true,
+  "hidePlayerAds" : true
 };
 
 /************************************/
@@ -31,12 +31,15 @@ var css = {
       display: none !important;
     }`,
 
-
-
   "hideMerch": `
     .ytd-merch-shelf-renderer {
       display: none !important;
     }`,
+  
+  "hidePlayerAds": `
+    #player-ads {
+      display: none !important;
+  }`,
 };
 
 // Element, that will contain CSS of activated settings
