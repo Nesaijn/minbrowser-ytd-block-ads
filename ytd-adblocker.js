@@ -8,7 +8,10 @@
 /* CSS that is added to page for hiding the elements */
 
 /* "id=comments" -> "#comments"
- * "<ytd-merch-shelf-renderer" -> ".ytd-merch-shelf-renderer" */
+ * "<ytd-merch-shelf-renderer" -> ".ytd-merch-shelf-renderer" 
+ * "class= ad-showing ad-interrupting" -> ".ad-interrupting"
+ */
+ 
 
 var css = {
   "hideHomeBanner": `
@@ -21,7 +24,7 @@ var css = {
       display: none !important;
     }`,
   
-  "hidePlayerAds": `
+  "hidePlayerBannerAds": `
     #player-ads {
       display: none !important;
   }`,
